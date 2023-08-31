@@ -45,6 +45,9 @@ const uint16_t PROGMEM openBraceCombo[] = {KC_H, KC_J, COMBO_END};
 const uint16_t PROGMEM closeBraceCombo[] = {KC_J, KC_K, COMBO_END};
 const uint16_t PROGMEM openBracketCombo[] = {KC_N, KC_M, COMBO_END};
 const uint16_t PROGMEM closeBracketCombo[] = {KC_M, KC_COMM, COMBO_END};
+const uint16_t PROGMEM dashCombo[] = {KC_R, KC_T, COMBO_END};
+const uint16_t PROGMEM underscoreCombo[] = {KC_F, KC_G, COMBO_END};
+const uint16_t PROGMEM equalsCombo[] = {KC_V, KC_B, COMBO_END};
 
 combo_t key_combos[] = {
 	COMBO(openParenCombo, KC_LPRN),
@@ -52,5 +55,8 @@ combo_t key_combos[] = {
 	COMBO(openBraceCombo, KC_LCBR),
 	COMBO(closeBraceCombo, KC_RCBR),
 	COMBO(openBracketCombo, KC_LBRC),
-	COMBO(closeBracketCombo, KC_RBRC)
+	COMBO(closeBracketCombo, KC_RBRC),
+	COMBO(dashCombo, KC_PMNS),
+	COMBO(underscoreCombo, KC_UNDS),
+	COMBO(equalsCombo, KC_PEQL)
 };
