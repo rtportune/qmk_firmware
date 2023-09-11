@@ -54,7 +54,7 @@ enum custom_keycodes {
 const uint16_t PROGMEM openParenCombo[] = {KC_Y, KC_U, COMBO_END};
 const uint16_t PROGMEM closeParenCombo[] = {KC_U, KC_I, COMBO_END};
 const uint16_t PROGMEM openBraceCombo[] = {KC_H, KC_J, COMBO_END};
-const uint16_t PROGMEM closeBraceCombo[] = {KC_J, KC_K, COMBO_END};
+const uint16_t PROGMEM closeBraceCombo[] = {KC_J, HOME_K, COMBO_END};
 const uint16_t PROGMEM openBracketCombo[] = {KC_N, KC_M, COMBO_END};
 const uint16_t PROGMEM closeBracketCombo[] = {KC_M, KC_COMM, COMBO_END};
 const uint16_t PROGMEM dashCombo[] = {KC_R, KC_T, COMBO_END};
