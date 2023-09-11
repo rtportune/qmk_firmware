@@ -9,6 +9,19 @@
 #define _LAYER5 5
 #define _LAYER6 6
 
+#define TAPPING_TERM 200
+#define QUICK_TAP_TERM 0
+
+//Left hand home row modifiers
+#define HOME_A LCTL_T(KC_A)
+#define HOME_S LSFT_T(KC_S)
+#define HOME_D LALT_T(KC_D)
+
+//Right hand home row modifiers
+#define HOME_SCLN RCTL_T(KC_SCLN)
+#define HOME_L RSFT_T(KC_L)
+#define HOME_K LALT_T(KC_K)
+
 // Default keypress section 
 enum custom_keycodes {
     LAYER0 = SAFE_RANGE,
@@ -22,7 +35,7 @@ enum custom_keycodes {
 
  const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
- [_LAYER0] = LAYOUT(KC_GRV, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_BSLS, KC_TAB, KC_A, KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_L, KC_SCLN, KC_QUOT, KC_LCTL, KC_Z, KC_X, KC_C, KC_V, KC_B, KC_ESC, CW_TOGG, KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, KC_RSFT, KC_LGUI, KC_LALT, KC_BSPC, MO(3), MO(4), MEH_T(KC_SPC), KC_RSFT, KC_ENT),
+ [_LAYER0] = LAYOUT(KC_GRV, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_BSLS, KC_TAB, HOME_A, HOME_S, HOME_D, KC_F, KC_G, KC_H, KC_J, HOME_K, HOME_L, HOME_SCLN, KC_QUOT, KC_LCTL, KC_Z, KC_X, KC_C, KC_V, KC_B, KC_ESC, CW_TOGG, KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, KC_RSFT, KC_LGUI, KC_LALT, KC_BSPC, MO(3), MO(4), MEH_T(KC_SPC), KC_RSFT, KC_ENT),
 
 [_LAYER1] = LAYOUT(KC_GRV, KC_QUOT, KC_COMM, KC_DOT, KC_P, KC_Y, KC_F, KC_G, KC_C, KC_R, KC_L, KC_BSPC, KC_TAB, KC_A, KC_O, KC_E, KC_U, KC_I, KC_D, KC_H, KC_T, KC_N, KC_S, KC_ENT, KC_LCTL, KC_SCLN, KC_Q, KC_J, KC_K, KC_X, KC_ESC, CW_TOGG, KC_B, KC_M, KC_W, KC_V, KC_Z, KC_SLSH, KC_LGUI, KC_LALT, KC_BSPC, MO(3), MO(4), KC_SPC, KC_RSFT, KC_ENT),
 
@@ -58,5 +71,5 @@ combo_t key_combos[] = {
 	COMBO(closeBracketCombo, KC_RBRC),
 	COMBO(dashCombo, KC_PMNS),
 	COMBO(underscoreCombo, KC_UNDS),
-	COMBO(equalsCombo, KC_PEQL)
+	COMBO(equalsCombo, KC_EQL)
 };
