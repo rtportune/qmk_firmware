@@ -10,7 +10,6 @@
 #define _LAYER6 6
 
 #define TAPPING_TERM 200
-#define QUICK_TAP_TERM 0
 
 //Left hand home row modifiers
 #define HOME_A LCTL_T(KC_A)
