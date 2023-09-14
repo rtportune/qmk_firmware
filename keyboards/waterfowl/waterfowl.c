@@ -41,9 +41,9 @@ bool encoder_update_kb(uint8_t index, bool clockwise) {
         }
     } else if (index == 3) { // Right encoder
         if (clockwise) {
-            tap_code(KC_RIGHT);
+            tap_code(KC_VOLD);
         } else {
-            tap_code(KC_LEFT);
+            tap_code(KC_VOLU);
         }
     }
 
